@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>W3.CSS Template</title>
@@ -54,16 +55,16 @@
     <div class="w3-col m6 w3-hide-small w3-padding-large">
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i> Photography</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="background-color: #006db0; width:90%">90%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i> Web Design</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="background-color: #006db0; width:85%">85%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <p class="w3-wide"><i class="fa fa-photo"></i> Photoshop</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="background-color: #006db0; width:75%">75%</div>
   </div>
@@ -121,91 +122,29 @@
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt
-        </html>
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Seaside resort">
+    </div>
+  </div>
 
-        <style>
-html, body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", sans-serif;
-}
+</div>
 
-body, html {
-  height: 100%;
-  color: #0081b0;
-  line-height: 1.8;
-}
+<!-- Modal for full size images on click -->
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
-  min-height: 100%;
-}
-
-.bgimg-2 {
-  background-image: url('/w3images/parallax2.jpg');
-  min-height: 400px;
-}
-
-.bgimg-3 {
-  background-image: url('/w3images/parallax3.jpg');
-  min-height: 400px;
-}
-
-.w3-wide {
-  letter-spacing: 10px;
-}
-
-.w3-hover-opacity {
-  cursor: pointer;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-  }
-}
-
-        </style>
-
-        <script>
-// Change style of navbar on scroll
-window.onscroll = function() {
-  myFunction();
-};
+<!-- Script to change navbar style on scroll -->
+<script>
+window.onscroll = function() {myFunction()};
 
 function myFunction() {
   var navbar = document.getElementById("myNavbar");
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
   } else {
-    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-  }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-        </script>
+    navbar.className = navbar.className.replace(" w3-card w3-animate
+                                                </script>
