@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-     <header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Squad Detailers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
         <div class="logo">
             <img src="placeholder-logo.png" alt="Shine Squad Detailers Logo">
         </div>
@@ -10,13 +19,13 @@
             <p>Contact: <a href="mailto:shinesquaddetailers@gmail.com">shinesquaddetailers@gmail.com</a> | Phone: <a href="tel:619-507-8011">619-507-8011</a></p>
         </div>
     </header>
-  <body>
+
     <main>
         <section id="about">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
         </section>
-        <br>
+
         <section id="prices">
             <h2>Prices</h2>
             <table>
@@ -43,17 +52,19 @@
             </table>
         </section>
     </main>
+
     <footer>
-            <button class="email-button" onclick="location.href='mailto:shinesquaddetailers@gmail.com'">Email Us</button>
-      <br>
-      <br>
-        <z>&copy; 2024 Shine Squad Detailers. All rights reserved.</z>
+        <button class="email-button" onclick="location.href='mailto:shinesquaddetailers@gmail.com'">Email Us</button>
+        <br><br>
+        <span>&copy; 2024 Shine Squad Detailers. All rights reserved.</span>
     </footer>
+
     <script src="scripts.js"></script>
+
 </body>
+
 </html>
-<style>
-  body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -61,7 +72,7 @@
 }
 
 p {
-  
+    /* Add any specific styles for paragraphs if needed */
 }
 
 header {
@@ -87,12 +98,12 @@ header {
 
 header h1 {
     margin: 0;
-  font-size: 60px;
+    font-size: 60px;
 }
 
 header p {
     margin: 5px 0 0;
-  font-size: 30px;
+    font-size: 30px;
 }
 
 header a {
@@ -143,9 +154,9 @@ th, td {
 }
 
 th {
-            background-color: #006db0; 
-            color: #fff;
-        }
+    background-color: #006db0;
+    color: #fff;
+}
 
 footer {
     background-color: #006db0;
@@ -156,5 +167,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
-</style>
