@@ -5,8 +5,14 @@ body {
     background-color: #f4f4f4;
 }
 
-p {
-  
+.logo {
+    flex: 0 0 auto; /* Ensure logo does not grow or shrink */
+}
+
+.logo img {
+    width: 120px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add space between logo and header content */
 }
 
 header {
