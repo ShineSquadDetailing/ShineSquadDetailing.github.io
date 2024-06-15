@@ -119,7 +119,7 @@
 
     <header>
         <div class="logo">
-            <img src="placeholder-logo.png" alt="Shine Squad Detailers Logo">
+            <img src="Shine Squad Logo.png" alt="Shine Squad Detailers Logo">
         </div>
         <div class="header-content">
             <h1>Shine Squad Detailers</h1>
