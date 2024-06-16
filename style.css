@@ -5,45 +5,34 @@ body {
     background-color: #f4f4f4;
 }
 
-.logo {
-    flex: 0 0 auto; 
-}
-
-.logo img {
-    width: 150px; 
-    height: auto; 
-    margin-right: 20px; 
-}
-
 header {
     display: flex;
     align-items: center;
     background-color: #006db0;
     color: #fff;
     padding: 20px;
-    justify-content: center;
-    position: relative;
+    justify-content: space-between;
 }
 
 .logo img {
-    width: 50px; /* Adjust as needed */
-    height: auto;
-    position: absolute;
-    left: 20px;
+    width: 150px; /* Increased the size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add space between logo and header content */
 }
 
 .header-content {
     text-align: center;
+    flex: 1;
 }
 
 header h1 {
     margin: 0;
-  font-size: 60px;
+    font-size: 60px;
 }
 
 header p {
     margin: 5px 0 0;
-  font-size: 30px;
+    font-size: 30px;
 }
 
 header a {
@@ -94,9 +83,9 @@ th, td {
 }
 
 th {
-            background-color: #006db0; 
-            color: #fff;
-        }
+    background-color: #006db0; 
+    color: #fff;
+}
 
 footer {
     background-color: #006db0;
