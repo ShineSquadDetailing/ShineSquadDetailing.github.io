@@ -8,10 +8,11 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures space between logo and header content */
+    justify-content: center; /* Center items horizontally */
     background-color: #006db0;
     color: #fff;
     padding: 20px;
+    position: relative;
 }
 
 .logo img {
@@ -22,6 +23,7 @@ header {
 .header-content {
     text-align: center;
     flex: 1; /* Allow header content to take remaining space */
+    padding-right: 200px; /* Offset by logo width to center correctly */
 }
 
 header h1 {
