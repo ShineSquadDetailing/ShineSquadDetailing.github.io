@@ -15,9 +15,8 @@ header {
 }
 
 .logo img {
-    width: 150px; /* Increased the size */
+    width: 150px; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Add space between logo and header content */
 }
 
 .header-content {
