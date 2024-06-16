@@ -23,7 +23,7 @@ header {
 .header-content {
     text-align: center;
     flex: 1; /* Allow header content to take remaining space */
-    padding-right: 180px; /* Offset by logo width to center correctly */
+    padding-right: 150px; /* Offset by logo width to center correctly */
 }
 
 header h1 {
