@@ -11,8 +11,8 @@ header {
     background-color: #006db0;
     color: #fff;
     padding: 20px;
-    justify-content: center;
     position: relative;
+    justify-content: space-between; /* Ensure space between logo and text */
 }
 
 .logo {
