@@ -16,8 +16,7 @@ header {
 }
 
 .logo {
-    position: absolute;
-    left: 20px;
+    margin-right: 20px; /* Add space between logo and header content */
 }
 
 .logo img {
@@ -110,8 +109,7 @@ footer {
     }
 
     .logo {
-        position: static;
-        margin-bottom: 10px;
+        margin: 0 0 10px 0;
     }
 
     .logo img {
@@ -119,7 +117,7 @@ footer {
     }
 
     .header-content {
-        width: 100%;
+        max-width: 100%;
     }
 
     header h1 {
