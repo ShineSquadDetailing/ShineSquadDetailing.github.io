@@ -16,7 +16,8 @@ header {
 }
 
 .logo {
-    margin-right: 20px; /* Add space between logo and header content */
+    flex: 0 0 auto;
+    margin-right: 20px;
 }
 
 .logo img {
@@ -25,8 +26,8 @@ header {
 }
 
 .header-content {
-    text-align: center;
     flex: 1;
+    text-align: center;
 }
 
 header h1 {
