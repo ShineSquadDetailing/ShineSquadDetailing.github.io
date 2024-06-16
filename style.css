@@ -23,7 +23,7 @@ header {
 .header-content {
     text-align: center;
     flex: 1;
-    padding-right: 160px;
+    padding-right: 160px; /* ensures content is centered */
 }
 
 header h1 {
@@ -112,6 +112,7 @@ footer {
 
     .header-content {
         padding-left: 0;
+        width: 100%; /* Ensure header-content takes full width */
     }
 
     header h1 {
