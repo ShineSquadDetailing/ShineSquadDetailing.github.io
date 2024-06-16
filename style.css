@@ -8,7 +8,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center;
     background-color: #006db0;
     color: #fff;
     padding: 20px;
@@ -16,14 +16,14 @@ header {
 }
 
 .logo img {
-    width: 150px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
 }
 
 .header-content {
     text-align: center;
-    flex: 1; /* Allow header content to take remaining space */
-    padding-right: 150px; /* Offset by logo width to center correctly */
+    flex: 1;
+    padding-right: 160px;
 }
 
 header h1 {
@@ -33,7 +33,7 @@ header h1 {
 
 header p {
     margin: 5px 0 0;
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 20px;
 }
 
 header a {
@@ -93,7 +93,36 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
-    bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .header-content {
+        padding-left: 0;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    footer {
+        position: relative; /* Fix footer position on smaller screens */
+    }
 }
