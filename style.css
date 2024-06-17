@@ -53,7 +53,6 @@ header a {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    margin-top: 10px;
     text-transform: uppercase;
 }
 
@@ -97,9 +96,36 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; /* Add padding to create space around content */
+    text-align: center; /* Center align content */
+}
+
+.email-button {
+    display: block;
+    margin: -10px auto 35px; /* Adjust top margin to move the button higher */
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.email-button:hover {
+    background-color: #e6b800;
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -119,7 +145,7 @@ footer {
 
     .header-content {
         max-width: 100%;
-        padding-right: 10px; /* Adjust padding for smaller screens */
+        padding-right: 10px;
     }
 
     header h1 {
@@ -132,5 +158,39 @@ footer {
 
     footer {
         position: relative;
+    }
+
+    .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; /* Add padding to create space around content */
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.email-button {
+    display: block;
+    margin: 10px auto; /* Center the button horizontally with margin */
+}
+}
+
+@media (min-width: 769px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .email-button {
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
